@@ -1,15 +1,25 @@
 window.onload = function() {
-  let allListItems = document.querySelectorAll("li");
-  console.log(allListItems)
-  allListItems.forEach((listItem) =>{
-    listItem.addEventListener("click", namedFunction);
-  });
+  let answers = ["1", "2", "3", "4"],
+    tot = answers.length;
 
-    function namedFunction(event){
-      let elem = document.querySelector(".selected")
-      if(elem) {
-      elem.className = "";
-      }
-      this.className = "selected"
-      }
+  function getCheckedValue(radioName) {
+    let radios = document.getElementsByName(radioName); // Get radio group by-name
+    for (let i = 0; i < radios.length; i++)
+      if (radios[i].checked) return radios[i].value; // return the checked value
+  }
+
+  function getScore() {
+    var score = 0;
+    for (var i = 0; i < tot; i++)
+      if (getCheckedValue("question" + i) === answers[i]) score += 1; // increment only
+    return score;
+  }
+
+  function correctAnwser () {
+    
+  }
+
+  function returnScore() {
+    alert("Your score is " + getScore() + "/" + tot);
+  }
 }
