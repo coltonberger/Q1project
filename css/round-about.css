@@ -8,12 +8,21 @@ body {
   padding-top: 54px;
 }
 
+input[type=radio] {
+  display: none;
+}
+
+input:checked + label img {
+  border:2px solid #00f;
+}
+
+.three {
+  height: 40px;
+  width: 40px;
+}
+
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
-}
-
-ul {
-  list-style-type: none;
 }
