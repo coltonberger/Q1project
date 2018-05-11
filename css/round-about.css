@@ -6,11 +6,6 @@
 
 body {
   padding-top: 54px;
-  background: orange
-}
-
-.rounded *{
-  background:orange
 }
 
 input[type=radio] {
