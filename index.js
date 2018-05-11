@@ -1,4 +1,4 @@
-var answers = ["1","1","1","1"],
+var answers = ["NY","NY","NY","NY"],
     tot = answers.length;
 
 function getCheckedValue( radioName ){
