@@ -24,17 +24,30 @@
 //
 
 
-// GETTING OUTPUT
+// GET OUTPUT
+//put clicked data into an array
 function getRadioValue(name) {
-var array = []
-var selected = document.querySelectorAll('input[type=radio]:checked')
+let array = []
+let selected = document.querySelectorAll('input[type=radio]:checked')
 
-for (var i = 0; i < selected.length; i++) {
+for (let i = 0; i < selected.length; i++) {
   array.push(selected[i].value)
 }
+
 return array;
 }
 
+//check if all four questions are anwsered
+function checkArrayLength(array){
+  let pickedArray = getRadioValue(array);
+  if (pickedArray.length < 3) {
+    return "Please complete quiz."
+  } else {
+    return largestCount(pickedArray);
+  }
+}
+
+//put data into an object
 function countCityFequency(array){
   let selectedValues = getRadioValue(array);
   let countCity = {};
@@ -51,6 +64,7 @@ function countCityFequency(array){
   return countCity;
 }
 
+//count largest keyObject Pair
 function largestCount(object){
   let obj = countCityFequency(object);
   let max = 0;
@@ -63,5 +77,10 @@ function largestCount(object){
       cityMostClicked = city;
     }
   }
-  return "You should visit " + cityMostClicked;
+
+  if (cityMostClicked === undefined) {
+    return "Please complete quiz."
+  } else {
+    return "You should visit " + cityMostClicked + ".";
+  }
 }
