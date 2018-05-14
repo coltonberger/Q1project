@@ -8,14 +8,15 @@ input[type=radio] {
   display: none;
 }
 
-img{
+/* img{
   display: inline-block;
   pointer-events: none;
   width: 200px;
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
+
 
 input:checked + label img {
   border:3px solid #00f;
@@ -29,4 +30,5 @@ input:checked + label img {
 }
 
 footer{
+  background: black
 }
