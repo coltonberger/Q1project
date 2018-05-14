@@ -13,25 +13,31 @@ h1{
 #question{
   color: white;
   border-radius: 25px;
-   background: #0ac94d;
-   padding: 20px;
+   background: #a6a6a8;
+   /* padding: 20px;
    width: 250px;
-   height: 75px;
+   height: 75px; */
    text-align: center;
 }
+
+form {
+  padding: 40px;
+  margin-left: 110px
+}
+
 
 input[type=radio] {
   display: none;
 }
 
-img{
+/* img{
   display: inline-block;
   pointer-events: none;
   width: 200px;
   height: 200px;
   background-repeat: no-repeat;
   background-position: center;
-}
+} */
 
 input:not(:checked) + label img {
   border:3px solid black;
@@ -41,14 +47,18 @@ input:checked + label img {
   border:3px solid #00f;
 }
 
-
-
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
 }
 
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
 footer{
-  background: black
+    padding: 40px;
 }

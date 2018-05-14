@@ -63,5 +63,5 @@ function largestCount(object){
       cityMostClicked = city;
     }
   }
-  return "You should live in " + cityMostClicked;
+  return "You should visit " + cityMostClicked;
 }
