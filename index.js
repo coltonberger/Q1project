@@ -25,7 +25,7 @@
 
 
 // GET OUTPUT
-//put clicked data into an array
+//Gather all clicked data and put into Array
 function getRadioValue(name) {
 let array = []
 let selected = document.querySelectorAll('input[type=radio]:checked')
@@ -37,17 +37,19 @@ for (let i = 0; i < selected.length; i++) {
 return array;
 }
 
-//check if all four questions are anwsered
+//check if all Four questions are anwsered.
+// If not complete quiz
+// else count most clicked city
 function checkArrayLength(array){
   let pickedArray = getRadioValue(array);
-  if (pickedArray.length < 3) {
+  if (pickedArray.length < 4) {
     return "Please complete quiz."
   } else {
     return largestCount(pickedArray);
   }
 }
 
-//put data into an object
+//put data into an object to easily count cities
 function countCityFequency(array){
   let selectedValues = getRadioValue(array);
   let countCity = {};
@@ -64,7 +66,7 @@ function countCityFequency(array){
   return countCity;
 }
 
-//count largest keyObject Pair
+//Return most clicked city
 function largestCount(object){
   let obj = countCityFequency(object);
   let max = 0;

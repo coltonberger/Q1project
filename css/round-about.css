@@ -14,9 +14,6 @@ h1{
   color: white;
   border-radius: 25px;
    background: #a6a6a8;
-   /* padding: 20px;
-   width: 250px;
-   height: 75px; */
    text-align: center;
 }
 
@@ -53,7 +50,7 @@ input:checked + label img {
   }
 }
 
-.form-actions {
+.form-sumbitButton {
     margin: 0;
     background-color: transparent;
     text-align: center;
