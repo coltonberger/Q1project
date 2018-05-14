@@ -4,25 +4,29 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
  */
 
-body {
-  padding-top: 54px;
-}
-
 input[type=radio] {
   display: none;
 }
 
-input:checked + label img {
-  border:2px solid #00f;
+img{
+  display: inline-block;
+  pointer-events: none;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.three {
-  height: 40px;
-  width: 40px;
+input:checked + label img {
+  border:3px solid #00f;
 }
+
 
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
+}
+
+footer{
 }
