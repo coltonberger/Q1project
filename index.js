@@ -21,8 +21,10 @@
 //
 // function returnScore(){
 //   alert("Your score is "+ getScore() +"/"+ tot);
-// }
+//
 
+
+// GETTING OUTPUT
 function getRadioValue(name) {
 var array = []
 var selected = document.querySelectorAll('input[type=radio]:checked')
