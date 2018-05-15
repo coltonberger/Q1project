@@ -43,7 +43,7 @@ return array;
 function checkArrayLength(array){
   let pickedArray = getRadioValue(array);
   if (pickedArray.length < 4) {
-    return "Please complete quiz."
+    return "System need all sections anwsered. Please complete quiz."
   } else {
     return largestCount(pickedArray);
   }
@@ -81,7 +81,7 @@ function largestCount(object){
   }
 
   if (cityMostClicked === undefined) {
-    return "Please complete quiz."
+    return "System need all sections anwsered. Please complete quiz."
   } else {
     return "You should visit " + cityMostClicked + ".";
   }

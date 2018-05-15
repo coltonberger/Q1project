@@ -1,27 +1,35 @@
 /*!
+
  * Start Bootstrap - Round About (https://startbootstrap.com/template-overviews/round-about)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
  */
 
-h1{
+h1 {
   text-align: center;
   font-family: monospace;
   font-size: 10vw;
 }
 
-#question{
+#question {
   color: white;
   border-radius: 25px;
-   background: #a6a6a8;
-   text-align: center;
+  background: #a6a6a8;
+  text-align: center;
+}
+
+#searchBarHeading {
+  color: white;
+  border-radius: 25px;
+  background: #a6a6a8;
+  text-align: center;
+  margin-top: 40px;
 }
 
 form {
   padding: 40px;
   margin-left: 110px
 }
-
 
 input[type=radio] {
   display: none;
@@ -36,12 +44,12 @@ input[type=radio] {
   background-position: center;
 } */
 
-input:not(:checked) + label img {
-  border:3px solid black;
+input:not(:checked)+label img {
+  border: 3px solid black;
 }
 
-input:checked + label img {
-  border:3px solid #00f;
+input:checked+label img {
+  border: 3px solid #00f;
 }
 
 @media (min-width: 992px) {
@@ -51,11 +59,11 @@ input:checked + label img {
 }
 
 .form-sumbitButton {
-    margin: 0;
-    background-color: transparent;
-    text-align: center;
+  margin: 0;
+  background-color: transparent;
+  text-align: center;
 }
 
-footer{
-    padding: 40px;
+footer {
+  padding: 40px;
 }

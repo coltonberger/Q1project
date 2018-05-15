@@ -136,11 +136,30 @@
         <button type="button" onclick="alert(checkArrayLength());">Discover</button>
     </div>
 
+    <div id="searchBarHeading">
+      Plan your visit now. Search through hundreds of flights and hotels.
+    </div>
+
+    <!-- google search flights & hotels -->
+    <script>
+      (function() {
+        var cx = '014638102533477823949:vpgpc-lujag';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+
+
     <footer class="container">
       <p class="m-0 text-center text-black">A Colton and Brechin Quiz - Copyright 2018</p>
     </footer>
 
-    <!-- AddToAny BEGIN -->
+    <!-- share on social media -->
     <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
     <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
     <a class="a2a_button_twitter"></a>
