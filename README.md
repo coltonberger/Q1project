@@ -4,7 +4,7 @@ Deployed URL:
 Quiz abstract. Take the quiz and it will output a suggested city you should live in.
 
 ## Description
-The Quiz works by answering the questions and pressing the 'Discover' button. A popup window will output the result displaying where The Quiz believes you should live based on your inputs.
+The Quiz works by answering the questions and pressing the 'Discover' button. A popup window will output the result displaying where The Quiz believes you should live based on your inputs. You can then search for flights, hotels, actives in that city. 
 
 ## Installation
 How do install your software to make it work? Do i just download the scripts? Do i download them from a central repository. This section should give readers a spoon-fed way of understanding how do i get to step 1. Make sure you recognize multiple deployment scenarios as well if it it integrates with things like Vagrant or Docker.
@@ -26,4 +26,4 @@ In the future, I would like to add these functions depending on necessity
   - make sure html, css, and JavaScript are all separated
 
 ## Contribution
-Corina (Breh-kin) Andariese
+Corina Andariese

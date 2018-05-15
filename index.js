@@ -86,3 +86,20 @@ function largestCount(object){
     return "You should visit " + cityMostClicked + ".";
   }
 }
+
+  //google search flights & hotels
+(function() {
+  var cx = '014638102533477823949:vpgpc-lujag';
+  var gcse = document.createElement('script');
+  gcse.type = 'text/javascript';
+  gcse.async = true;
+  gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(gcse, s);
+})();
+
+
+// //storing result
+// localStorage.setItem('favoriteflavor','vanilla');
+// var taste = localStorage.getItem('favoriteflavor');
+// // -> "vanilla"
