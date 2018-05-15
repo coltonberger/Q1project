@@ -10,14 +10,12 @@ h1 {
   font-family: monospace;
   font-size: 10vw;
 }
-
 #question {
   color: white;
   border-radius: 25px;
   background: #a6a6a8;
   text-align: center;
 }
-
 #searchBarHeading {
   color: white;
   border-radius: 25px;
@@ -25,55 +23,37 @@ h1 {
   text-align: center;
   margin-top: 40px;
 }
-
 form {
   padding: 40px;
   margin-left: 110px
 }
-
 input[type=radio] {
   display: none;
 }
-
-/* img{
-  display: inline-block;
-  pointer-events: none;
-  width: 200px;
-  height: 200px;
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
 input:not(:checked)+label img {
-  border: 3px solid black;
-  /* opacity: .8; */
+  border: 3px solid grey;
 }
-
 input:checked+label img {
-  border: 5px solid #53319e;
-  /* opacity: 1; */
+  border: 5px solid black;
 }
-
 @media (min-width: 992px) {
   body {
     padding-top: 56px;
   }
 }
-
 .form-sumbitButton {
   margin: 0;
   background-color: transparent;
   text-align: center;
 }
-
 footer {
   padding: 40px;
 }
- /* _____________ */
-.hvrbox,
+
+/* Hover Effect and name */
+/* .hvrbox,
 .hvrbox * {
 	box-sizing: border-box; */
-}
 .hvrbox {
 	position: relative;
 	display: inline-block;
@@ -81,12 +61,12 @@ footer {
 	max-width: 100%;
 	height: auto;
 }
-.hvrbox img {
+/* .hvrbox img {
 	max-width: 100%;
-}
-.hvrbox .hvrbox-layer_bottom {
+} */
+/* .hvrbox .hvrbox-layer_bottom {
 	display: block;
-}
+} */
 .hvrbox .hvrbox-layer_top {
   border-radius: 70%;
 	opacity: 0;
@@ -104,6 +84,7 @@ footer {
 	-webkit-transition: all 0.4s ease-in-out 0s;
 	-ms-transition: all 0.4s ease-in-out 0s;
 	transition: all 0.4s ease-in-out 0s;
+  cursor: pointer;
 }
 .hvrbox:hover .hvrbox-layer_top,
 .hvrbox.active .hvrbox-layer_top {
