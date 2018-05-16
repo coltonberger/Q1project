@@ -45,6 +45,7 @@ input:checked+label img {
   margin: 0;
   background-color: transparent;
   text-align: center;
+  cursor: pointer;
 }
 footer {
   padding: 40px;

@@ -15,6 +15,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/round-about.css" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -33,7 +34,7 @@
       <h4 id="question">Choose a drink</h4>
       <form>
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question0" value="NY" id="NYdrink">
+          <input class="radio-inline" type="radio" name="question0" value="New York" id="NYdrink">
           <label for="NYdrink">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://i1.wp.com/www.imbored-letsgo.com/wp-content/uploads/2014/12/Berry-Merry-Christmas-Martini.jpg); width: 200px; height: 200px; background-size: 200px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -43,7 +44,7 @@
         </div>
 
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question0" value="SF" id="SFdrink">
+          <input class="radio-inline" type="radio" name="question0" value="San Francisco" id="SFdrink">
           <label for="SFdrink">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/11/20/0/fnd_beer-istock.jpg.rend.hgtvcom.616.462.suffix/1448031613421.jpeg); width: 200px; height: 200px; background-size: 275px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -77,7 +78,7 @@
       <h4 id="question">Choose a jacket</h4>
       <form>
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question1" value="NY" id="NYoutfit">
+          <input class="radio-inline" type="radio" name="question1" value="New York" id="NYoutfit">
           <label for="NYoutfit">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://item3.tradesy.com/images/burberry-khaki-trench-unisex-long-52-size-os-one-size-21689427-0-2.jpg?width=720&height=960); width: 200px; height: 200px; background-size: 100px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -87,7 +88,7 @@
         </div>
 
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question1" value="SF" id="SFoutfit">
+          <input class="radio-inline" type="radio" name="question1" value="San Francisco" id="SFoutfit">
           <label for="SFoutfit">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(http://3i1e5d437yd84efcy34dardm-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/red-mens-hoodies-2016.png); width: 200px; height: 200px; background-size: 140px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -131,7 +132,7 @@
         </div>
 
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question2" value="NY" id="NYfood">
+          <input class="radio-inline" type="radio" name="question2" value="New York" id="NYfood">
           <label for="NYfood">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(http://www.newyorkpizzaonline.com/images/Flying%20Pizza.jpg); width: 200px; height: 200px; background-size: 300px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -141,7 +142,7 @@
         </div>
 
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question2" value="SF" id="SFfood">
+          <input class="radio-inline" type="radio" name="question2" value="San Francisco" id="SFfood">
           <label for="SFfood">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://media.timeout.com/images/101716381/image.jpg); width: 200px; height: 200px; background-size: 300px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -165,7 +166,7 @@
       <h4 id="question">Choose your ideal weather</h4>
       <form>
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question3" value="SF" id="SFweather">
+          <input class="radio-inline" type="radio" name="question3" value="San Francisco" id="SFweather">
           <label for="SFweather">
             <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://media.wired.com/photos/5926b3f2f3e2356fd800a29e/master/w_2048,c_limit/fog-fingers_LorenzoMontezemolo_2048px.jpg); width: 200px; height: 200px; background-size: 300px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -185,7 +186,7 @@
         </div>
 
         <div class="hvrbox">
-          <input class="radio-inline" type="radio" name="question3" value="NY" id="NYweather">
+          <input class="radio-inline" type="radio" name="question3" value="New York" id="NYweather">
           <label for="NYweather">
             <img class="rounded-circle" style="display: inline-block; pointer-events: pointer; background: url(https://www.weather.gov/images/okx/winterwx2.jpg); width: 200px; height: 200px; background-size: 325px; background-repeat: no-repeat; background-position: center;">
             <div class="hvrbox-layer_top">
@@ -207,7 +208,7 @@
     </div>
 
     <div class="form-sumbitButton">
-      <button type="button" onclick="alert(checkArrayLength());">Discover</button>
+      <button type="button" onclick="swal(checkArrayLength(),{buttons: false});" style="cursor: pointer">Discover</button>
     </div>
 
     <div id="searchBarHeading">
