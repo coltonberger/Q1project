@@ -11,6 +11,12 @@ h1 {
   font-size: 10vw;
 }
 
+h3 {
+  text-align: center;
+  font-family: monospace;
+  font-size: 4vw
+}
+
 #question {
   color: white;
   border-radius: 25px;
@@ -104,7 +110,7 @@ footer {
 	width: 100%;
 	height: 100%;
 	background: rgba(255,255,255, 0.3);
-	color: #fff;
+	color: black;
   cursor: pointer;
 }
 
@@ -137,4 +143,8 @@ footer {
 
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
+}
+
+#link{
+  border: 5px solid black;
 }

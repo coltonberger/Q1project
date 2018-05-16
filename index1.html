@@ -20,77 +20,76 @@
 
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Travel Quiz</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Quiz
-                  <span class="sr-only">(current)</span>
-                </a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="index1.html">Explore</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Travel Quiz</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Quiz
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index1.html">Explore</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
 
   <!-- Page Content -->
   <div class="container">
 
     <!-- Introduction Row -->
-    <h1>Ready to discover?<br>
-        <small>Find flights, hotels, and more!</small>
-    </h1>
+    <h1>Ready to discover?</h1>
 
     <!-- FIRST question -->
     <div class="questions">
-      <h4 id="question">get a glimps inside your next trip</h4>
+      <h4 id="question">Get a glimpse into your next trip</h4>
+
       <form>
         <form>
 
-
-          <div class="hvrbox">
-            <input class="radio-inline" type="radio" name="question0" value="SF" id="SFdrink"></label>
-            <label for="SFdrink">
-              <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(http://www.upout.com/blog/wp-content/uploads/the_golden_gate_bridge_.png); width: 200px; height: 200px; background-size: 300px; background-repeat: no-repeat; background-position: center;">
+          <div class="hvrbox" onclick="location.href='http://www.sftravel.com/';" value="go to sf"/>
+            <input class="radio-inline" type="radio" name="SFinfo" value="SF" id="link"></label>
+            <label for="SFinfo">
+              <img id="link" class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(http://www.upout.com/blog/wp-content/uploads/the_golden_gate_bridge_.png); width: 200px; height: 200px; background-size: 300px; background-repeat: no-repeat; background-position: center;">
                 <div class="hvrbox-layer_top">
                   <div class="hvrbox-text">San Francisco</div>
                 </div>
             </label>
 
           </div>
-          <div class="hvrbox">
-            <input class="radio-inline" type="radio" name="question0" value="New York" id="NYdrink">
-            <label for="NYdrink">
-              <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://png.pngtree.com/element_origin_min_pic/16/10/09/2057fa35363a8fe.jpg); width: 200px; height: 200px; background-size: 250px; background-repeat: no-repeat; background-position: center;">
+          <div class="hvrbox" onclick="location.href='https://www.nycgo.com/';" value="go to ny"/>
+            <input class="radio-inline" type="radio" name="NYinfo" value="NY" id="link">
+            <label for="NYinfo">
+              <img id="link" class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://png.pngtree.com/element_origin_min_pic/16/10/09/2057fa35363a8fe.jpg); width: 200px; height: 200px; background-size: 250px; background-repeat: no-repeat; background-position: center;">
               <div class="hvrbox-layer_top">
                 <div class="hvrbox-text">New York</div>
               </div>
             </label>
           </div>
 
-          <div class="hvrbox">
-            <input class="radio-inline" type="radio" name="question0" value="Seattle" id="SAdrink"></label>
-            <label for="SAdrink">
-              <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://images.cdn3.stockunlimited.net/clipart450/space-needle_1705805.jpg); width: 200px; height: 200px; background-size: 225px; background-repeat: no-repeat; background-position: center;">
+          <div class="hvrbox" onclick="location.href='https://www.visitseattle.org/';" value="go to sa"/>
+            <input class="radio-inline" type="radio" name="SAinfo" value="SA" id="link"></label>
+            <label for="SAinfo">
+              <img id="link" class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://images.cdn3.stockunlimited.net/clipart450/space-needle_1705805.jpg); width: 200px; height: 200px; background-size: 225px; background-repeat: no-repeat; background-position: center;">
               <div class="hvrbox-layer_top">
                 <div class="hvrbox-text">Seattle</div>
               </div>
             </label>
           </div>
 
-          <div class="hvrbox">
-            <input class="radio-inline" type="radio" name="question0" value="Atlanta" id="ATdrink"></label>
-            <label for="ATdrink">
-              <img class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://www.xyzwallpaper.com/wp-content/uploads/2017/07/peach-clipart-photo-quote.png); width: 200px; height: 200px; background-size: 260px; background-repeat: no-repeat; background-position: center;">
+          <div class="hvrbox" onclick="location.href='https://www.atlanta.net/';" value="go to at"/>
+            <input class="radio-inline" type="radio" name="ATinfo" value="AT" id="link"></label>
+            <label for="ATinfo">
+              <img id="link" class="rounded-circle" style="display: inline-block; pointer-events: none; background: url(https://www.xyzwallpaper.com/wp-content/uploads/2017/07/peach-clipart-photo-quote.png); width: 200px; height: 200px; background-size: 260px; background-repeat: no-repeat; background-position: center;">
               <div class="hvrbox-layer_top">
                 <div class="hvrbox-text">Atlanta</div>
               </div>
@@ -99,6 +98,7 @@
         </form>
     </div>
 
+<h3>Search for flights, hotels, and more below...</h3>
     <!-- google search  -->
     <gcse:search></gcse:search>
 
@@ -107,11 +107,12 @@
     </footer>
 
     <!-- share on social media -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+      <div class="a2a_kit a2a_kit_size_32 a2a_floating_style a2a_vertical_style" style="left:0px; top:100px;">
       <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
       <a class="a2a_button_twitter"></a>
       <a class="a2a_button_kakao"></a>
       <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_line"></a>
     </div>
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <!-- AddToAny END -->
@@ -122,5 +123,3 @@
 </body>
 
 </html>
-
-<!-- removing nav bar, do not need, might want to turn it into a progress bar later. -->
