@@ -1,30 +1,4 @@
-// var answers = ["NY","NY","NY","NY"],
-//     tot = answers.length;
-//
-// function getCheckedValue( radioName ){
-//     let radios = document.getElementsByName( radioName ); // Get radio group by-name
-//     for(var y=0; y<radios.length; y++)
-//       if(radios[y].checked) {
-//       return radios[y].value; // return the checked value
-//     }
-// }
-//
-// function getScore(){
-//   var score = 0;
-//   for (var i=0; i<tot; i++)
-//     if(getCheckedValue("question"+i)===answers[i]){
-//       console.log(getCheckedValue("question"+i))
-//       score += 1; // increment only
-//     }
-//   return score;
-// }
-//
-// function returnScore(){
-//   alert("Your score is "+ getScore() +"/"+ tot);
-//
-
-
-// GET OUTPUT
+// GET OUTPUT FROM QUIZ
 //Gather all clicked data and put into Array
 function getRadioValue(name) {
 let array = []
@@ -97,9 +71,3 @@ function largestCount(object){
   var s = document.getElementsByTagName('script')[0];
   s.parentNode.insertBefore(gcse, s);
 })();
-
-
-// //storing result
-// localStorage.setItem('favoriteflavor','vanilla');
-// var taste = localStorage.getItem('favoriteflavor');
-// // -> "vanilla"
