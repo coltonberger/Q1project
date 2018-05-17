@@ -1,9 +1,18 @@
 /*!
-
  * Start Bootstrap - Round About (https://startbootstrap.com/template-overviews/round-about)
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-round-about/blob/master/LICENSE)
  */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
 
 h1 {
   text-align: center;
@@ -54,44 +63,11 @@ input:checked+label img {
   border: 5px solid black;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
-}
-
 .form-sumbitButton {
   margin: 0;
   background-color: transparent;
   text-align: center;
   cursor: pointer;
-}
-
-footer {
-  padding: 40px;
-}
-
-.navbar {
- min-height: 20px;
-}
-
-.navbar-brand {
- padding: 0px;
- height: 15px;
- line-height: 15px;
-}
-
-.navbar-toggle {
- margin-top: 23px;
- padding: 9px 10px !important;
-}
-
-@media (min-width: 768px) {
- .navbar-nav > li > a {
-   padding-top: 0px;
-   padding-bottom: 0px;
-   line-height: 5px;
- }
 }
 
 /* Hover Effect and name on images */
@@ -147,4 +123,8 @@ footer {
 
 #link{
   border: 5px solid black;
+}
+
+footer {
+  padding: 40px;
 }
