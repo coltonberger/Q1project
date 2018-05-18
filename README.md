@@ -1,6 +1,6 @@
 Quiz: Where should you travel?
 ======================
-Deployed URL: travel_quiz.surge.sh
+Deployed URL: brechy.net
 
 Quiz abstract. Take the quiz and it will output a suggested city you should visit.
 
